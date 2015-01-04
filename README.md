@@ -7,4 +7,4 @@ En este espacio encontrarás los archivos necesarios para poder realizar los vid
 Conforme se vayan necesitando más archivos se irá actualizando el repositorio.
 
 =================
-Vida MRR © 2013 Derechos Reservados
+Vida MRR © 2015 Derechos Reservados
