@@ -1,0 +1,15 @@
+#main-container{
+	margin: 40px auto;
+}
+#content{
+	padding: 25px;
+}
+h1{
+	padding-bottom: 10px;
+}
+#boton-content{
+	padding: 10px;
+}
+a{
+	padding: 10px;
+}
