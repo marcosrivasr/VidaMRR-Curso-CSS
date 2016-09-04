@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo 2: uso de Padding</title>
+	<style>
+		body{
+			background-color: #DE6F14;
+			font-family: Helvetica;
+		}
+		#container{
+			margin: 0 auto;
+		}
+		#container{
+			background-color: white;
+			padding: 20px;
+			width: 400px;
+		}
+
+		.campo{
+			padding: 20px 0;
+		}
+
+		.campo input, .campo textarea{
+			padding: 10px;
+			width: 350px;
+		}
+
+		.boton{
+			border: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="container">
+			<div class="campo">
+				Nombre: <p><input type="text" placeholder="Escribe tu nombre"></p>
+			</div>
+			<div class="campo">
+				Correo electrónico: <p><input type="text" placeholder="usuario@example.com"></p>
+			</div>
+			<div class="campo">
+				Comentarios: <p><textarea></textarea></p>
+			</div>
+			<div class="campo">
+				<input type="submit" class="boton" value="Enviar datos">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
