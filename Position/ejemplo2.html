@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo 2</title>
+
+	<style>
+		body{
+			background-color: #CF212A;
+		}
+
+		#container{
+			margin-top: 100px;
+			text-align: center;
+		}
+		
+		.image{
+			display: inline-block;
+			width: 300px;
+		}
+		.name{
+			background-color: black;
+			color: white;
+			padding: 10px;
+			width: 100px;
+
+			display: none;
+			position: absolute;
+			margin-left: 90px;
+			top: 300px;
+		}
+		.image:hover .name{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="image">
+			<img src="img/imagen-01.png" id="imagen01">
+			<div class="name">
+				Hugo
+			</div>
+		</div>
+		<div class="image">
+			<img src="img/imagen-02.png" id="imagen02">
+			<div class="name">
+				Celia
+			</div>
+		</div>
+		<div class="image">
+			<img src="img/imagen-03.png" id="imagen03">
+			<div class="name">
+				Raúl
+			</div>
+		</div>
+	</div>
+</body>
+</html>

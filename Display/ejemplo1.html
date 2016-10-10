@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo 1: uso de propiedad Display</title>
+	<style>
+		body{
+			background-color: #E83FA7;
+		}
+
+		#container{
+			background-color: #fff;
+			margin: 150px auto;
+			padding: 15px;
+			width: 500px;
+		}
+
+		#container .card{
+			border: solid 1px #ccc;
+			padding: 10px;
+			width: 100px;
+
+			display: inline-block;
+		}
+
+		#container .card h2{
+			background-color: #eee;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="container">
+			<div class="card">
+				<h2>Carta 1</h2>
+				<p>Lorem ipsum dolor sit amet</p>
+			</div>
+
+			<div class="card">
+				<h2>Carta 2</h2>
+				<p>Lorem ipsum dolor sit amet</p>
+			</div>
+
+			<div class="card">
+				<h2>Carta 3</h2>
+				<p>Lorem ipsum dolor sit amet</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

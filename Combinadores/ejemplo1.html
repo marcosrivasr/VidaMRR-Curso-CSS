@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Combinadores</title>
+	<style>
+		body{font-family: Arial; background-color: #409111;}
+		#container{margin: auto; width: 300px;}
+
+		.opcion div{line-height: 20px;}
+		.opcion > div{padding: 10px; background-color: #003366; color: white;}
+		.opcion > div + div{padding: 0;}
+		.opcion > div + div img ~ div{background-color: white; color: black; padding: 10px;}
+		.opcion > div + div img + div{font-size: 10px; font-style: italic;}
+		.opcion > div + div{display: none;}
+		.opcion > div:hover + div{display: block;}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="opciones">
+
+			<div class="opcion">
+				<div>Elemento 1</div>
+				<div>
+					<img src="img/imagen01.png" alt="" width="300">
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate obcaecati sunt quasi aut rem blanditiis vitae tempora doloremque, laudantium dolorem porro, quisquam veritatis autem quae. Sunt ex sed iure minima.</div>
+				</div>
+			</div>
+
+			<div class="opcion">
+				<div>Elemento 2</div>
+				<div>
+					<img src="img/imagen02.png" alt="" width="300">
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate obcaecati sunt quasi aut rem blanditiis vitae tempora doloremque, laudantium dolorem porro, quisquam veritatis autem quae. Sunt ex sed iure minima.</div>
+				</div>
+			</div>
+			<div class="opcion">
+				<div>Elemento 3</div>
+				<div>
+					<img src="img/imagen03.png" alt="" width="300">
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate obcaecati sunt quasi aut rem blanditiis vitae tempora doloremque, laudantium dolorem porro, quisquam veritatis autem quae. Sunt ex sed iure minima.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
