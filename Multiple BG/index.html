@@ -1,0 +1,34 @@
+<!--
+	TUTORIAL:  MULTIPLES IMÁGENES DE FONDO
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Multiples Imágenes de fondo</title>
+
+	<style>
+		body{
+			background-color: #CC5200;
+		}
+
+		#disco{
+			background-image: url(arrow.png), url(shadow.png), url(cover.jpg);
+			background-size: 0, 0, 500px;
+			background-repeat: no-repeat;
+			background-position: center, center;
+			margin: 100px auto;
+			height: 500px;
+			width: 500px;
+		}
+
+		#disco:hover{
+			background-size: 100px, 500px, 500px;
+		}
+	</style>
+</head>
+<body>
+	<div id="disco"></div>
+</body>
+</html>
