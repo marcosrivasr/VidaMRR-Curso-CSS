@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="boton.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<style>
+		body{font-family: Arial; background-color: #18A383; box-sizing: border-box; padding-top: 100px;}
+
+		form{
+			background-color: white;
+			border-radius: 0 0 3px 3px;
+			color: #999;
+			font-size: 0.8em;
+			padding: 20px;
+			margin: 0 auto;
+			width: 300px;
+		}
+
+		input, textarea{
+			border: 0;
+			outline: none;
+
+			width: 280px;
+		}
+
+		.field{
+			border: solid 1px #ccc;
+			border-radius: 0 5px 5px 0;
+			padding: 10px;
+			width: 240px;
+			
+		}
+
+		.field:focus{
+			border-color: #18A383;
+		}
+
+		.center-content{
+			text-align: center;
+		}
+
+		.field-container div{
+			display: inline-block;
+			vertical-align: top;
+		}
+		.field-container i{
+			border: solid 1px #ccc;
+			background-color: #ddd;
+			border-radius: 5px 0 0 5px;
+			color: #888;
+			padding: 10px 10px 11px 10px;
+			margin-right: -5px;
+			vertical-align: top;
+		}
+
+		#menu, #formularios{
+			margin: 0 auto;
+			width: 340px;
+		}
+
+		#menu ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		#menu ul li{
+			display: inline-block;
+			width: 50%;
+			margin-right: -4px;
+		}
+
+		#menu ul li a{
+			background-color: #ddd;
+			color: #222;
+			display: block;
+			padding: 20px 20px;
+			text-decoration: none;
+		}
+
+		#menu ul li a:hover{
+			background-color: #eee;
+		}
+
+		.active{
+			background-color: white !important;
+		}
+		.columns >div{
+			display: inline-block;
+			vertical-align: top;
+			width: 50%;
+			margin-right: -4px;
+		}
+		.columns .field{
+			width: 80px;
+		}
+
+		#form-register{
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li><a href="#" class="active">Iniciar sesión</a></li>
+			<li><a href="#">Registrarse</a></li>
+		</ul>
+
+	</div>
+	<div id="formularios">
+		<form action="">
+			<p>Correo electrónico:</p>
+			<div class="field-container">
+				<i class="fa fa-envelope-o fa-lg"></i>
+				<input type="text" class="field" placeholder="user@example.com"> <br/>	
+			</div>
+			
+			<p>Contraseña:</p>
+			<div class="field-container">
+				
+				<i class="fa fa-key fa-lg"></i>
+				<input type="password" class="field" placeholder="*******"> <br/>
+			</div>
+
+			<p class="center-content">
+				<input type="submit" class="btn btn-green" value="Iniciar sesión">
+			</p>
+
+		</form>
+
+		<form action="" id="form-register">
+
+			<div class="columns">
+				
+					<div class="field-container">
+						<p>Nombre:</p>
+						<i class="fa fa-user-circle-o fa-lg"></i>
+						<input type="text" class="field" placeholder="Marcos"> <br/>	
+					</div>	
+
+				
+					<div class="field-container">
+						<p>Apellido:</p>		
+						<i class="fa fa-user-circle-o fa-lg"></i>
+						<input type="text" class="field" placeholder="Rivas"> <br/>
+					</div>
+			</div>
+			
+			
+			
+
+			<p>Correo electrónico:</p>
+			<div class="field-container">
+				
+				<i class="fa fa-envelope-o fa-lg"></i>
+				<input type="text" class="field" placeholder="user@example.com"> <br/>
+			</div>
+
+			<p>Contraseña:</p>
+			<div class="field-container">
+				
+				<i class="fa fa-key fa-lg"></i>
+				<input type="password" class="field" placeholder="********"> <br/>
+			</div>
+
+			<div class="columns">
+				<div class="field-container">
+					<p>Compañía:</p>	
+					<i class="fa fa-building fa-lg"></i>
+					<input type="text" class="field" placeholder="Microsoft"> <br/>
+				</div>
+
+				
+				<div class="field-container">
+					<p>Teléfono:</p>	
+					<i class="fa fa-phone fa-lg"></i>
+					<input type="text" class="field" placeholder="+52 1 5523"> <br/>
+				</div>	
+			</div>
+			
+
+			<p class="center-content">
+				<input type="submit" class="btn btn-green" value="Iniciar sesión">
+			</p>
+
+		</form>
+	</div>
+
+	<script src="jquery.js"></script>
+	<script>
+		$(function(){
+			$("#menu li").on("click", function(){
+				var i = $(this).index();
+				$("#formularios form").hide();
+				$("#formularios form").eq(i).show();
+				$("#menu li a").removeClass("active");
+				$(this).find("a").addClass("active");
+			});
+		});
+	</script>
+	
+</body>
+</html>
+
+
