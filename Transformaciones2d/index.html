@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transformaciones 2D</title>
+	<style>
+		body{
+			background-color: #222;
+		}
+		#container{width: 1270px; margin: 0 auto;}
+		.transf{
+			background-color: black;
+			box-sizing: border-box;
+			display: inline-block;
+			vertical-align: top;
+			margin: 10px;
+			height: 400px;
+			width: 400px;
+		}
+
+		#capa02{font-size: 72px; color: white; padding: 140px 0; text-align: center;}
+		#capa03{background: linear-gradient(#46D6E0, #4658E0);}
+		#capa04{background-color: #FF7300; padding: 20px;}
+
+
+		#capa01,#capa02,#capa03,#capa04,#capa05,#capa06{transition: all 1s;}
+
+		/* TRANSLATE*/
+		#capa01:hover{transform: translate(-50px, 600px);}
+		/* ROTATE */
+		#capa02:hover{transform: rotate(-180deg);}
+		/* SKEWX */
+		#capa03:hover{transform: skewX(50deg);}
+		/* SKEWY */ 
+		#capa04:hover{transform: skewY(-30deg);}
+		/* SCALE */
+		#capa05:hover{transform: scale(2,5);}
+		/* MATRIX - SCALEX, SKEWY, SKEWX, SCALEY, TRANSLATEX, TRANSLATEY */
+		#capa06:hover{ transform: matrix(2,20,0, 2, 100, 200); }
+	</style>
+</head>
+<body>
+	<div id="container">
+		
+		<div class="transf" id="capa01"><img src="img01.png" alt="" width="400"></div>
+		<div class="transf" id="capa02">¡Hola!</div>
+		<div class="transf" id="capa03"></div>
+		<div class="transf" id="capa04">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptate recusandae dignissimos reiciendis et, fugiat accusantium unde ipsam suscipit obcaecati, nam perferendis labore minima. Provident est minus veniam, esse voluptatibus.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, voluptate recusandae dignissimos reiciendis et, fugiat accusantium unde ipsam suscipit obcaecati, nam perferendis labore minima. Provident est minus veniam, esse voluptatibus.</p>
+		</div>
+		<div class="transf" id="capa05"><img src="img02.jpg" alt="" width="400"></div>
+		<div class="transf" id="capa06"><img src="img03.jpg" alt="" width="400"></div>
+
+	</div>
+</body>
+</html>

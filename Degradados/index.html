@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Degradados</title>
+	<style>
+
+		body{background: #174DA3;box-sizing: border-box;font-family: Verdana;}
+		#container{width: 700px; height: 400px; margin: 100px auto;}
+
+		#card, #img-bg{
+			width: 700px; height: 400px;
+		}
+		/*
+			#6481A1, #212A33
+			#F29E02, #CC701F
+			#02AAF2, #4602F2, #9E36B3
+
+		*/
+		#card{
+			background-color: #000;
+			background: radial-gradient( #000, red);
+			border-radius: 7px;
+			box-shadow: 0 0 20px rgba(0,0,0,0.2);
+			color: white;
+		}
+		#img-bg{
+			background-image: url(perrito.png);
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			background-size: 600px;
+		}
+		h1{
+			font-size: 62px;
+			padding: 100px  0 0 40px;
+			margin: 0;
+		}
+		h2{
+			color: rgba(255,255,255,0.7);
+			font-size: 20px;
+			padding: 0  0 0 40px;
+		}
+		p{
+			padding: 20px  0 0 40px;
+		}
+		p a{
+			background-color: #387BC2;
+			border-radius: 5px;
+			padding: 10px 15px;
+			color: white;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+
+<div id="container">
+	<div id="card">
+		<div id="img-bg">
+			<h1>Jackson</h1>
+			<h2>Edad: 5 años</h2>	
+			<p><a href="#">Conocer más</a></p>
+		</div>
+	</div>
+</div>
+
+	
+</body>
+</html>

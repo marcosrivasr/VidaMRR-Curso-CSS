@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cubo 3D</title>
+
+	<style>
+		#container{
+			perspective: 800px;
+			margin: 200px auto;
+			width: 500px;
+		}
+		
+		#cubo{
+			transform-style: preserve-3d;
+			width: 500px;
+			height: 500px;
+
+			transform: rotateY(45deg);
+		}
+		.cara{
+			position: absolute;
+			height: 500px;
+			width: 500px;
+		}
+		
+		.enfrente{
+			background-color: rgba(95,27,188,0.5);
+			transform: translateZ(250px);
+		}
+		.atras{
+			background-color: rgba(95,242,81,0.5);
+			transform: translateZ(-250px);	
+		}
+		.arriba{
+			background-color: rgba(95,188,27,0.5);
+			transform: translateY(-250px) rotateX(90deg);
+		}
+		.abajo{
+			background-color: rgba(95,81,244,0.5);
+			transform: translateY(250px) rotateX(90deg);	
+		}
+		.izquierda{
+			background-color: rgba(201,54,122,0.5);
+			transform: translateX(-250px) rotateY(90deg);
+		}
+		.derecha{
+			background-color: rgba(196,201,54,0.5);
+			transform: translateX(250px) rotateY(90deg);
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="cubo">
+			<div class="cara enfrente"></div>
+			<div class="cara atras"></div>
+			<div class="cara arriba"></div>
+			<div class="cara abajo"></div>
+			<div class="cara izquierda"></div>
+			<div class="cara derecha"></div>	
+		</div>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo 2 - Animaciones</title>
+	<style>
+		body{background: #1D4EA3;}
+		#container{
+			margin-top: 150px;
+			text-align: center;
+		}
+
+		#container div{
+			background-color: #F7D23E;
+			display: inline-block;
+			vertical-align: top;
+			height: 30px;
+			width: 300px;
+		}
+		#imagen1{
+			transition: all linear 8s;
+		}
+
+		#imagen2{
+			transition: all ease  8s;
+		}
+
+		#imagen3{
+			transition: all ease-in  8s;
+		}
+
+		#imagen4{
+			transition: all ease-out  8s;
+		}
+
+		#imagen5{
+			transition: all ease-in-out 8s;
+		}
+
+		#container:hover div{
+			height: 600px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="imagen1"></div>
+		<div id="imagen2"></div>
+		<div id="imagen3"></div>
+		<div id="imagen4"></div>
+		<div id="imagen5"></div>
+	</div>
+	
+</body>
+</html>

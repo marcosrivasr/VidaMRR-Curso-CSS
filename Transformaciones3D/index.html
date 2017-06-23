@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transformaciones 3D</title>
+
+	<style>
+		body{background-color: #2F3B40;}
+
+		#container{
+			perspective: 500px;
+			width: 700px;
+			margin: 200px auto;
+		}
+
+		#imagen{
+			transition: all 1s;
+		}
+
+		#imagen:hover{
+			/* rotateZ */
+			
+			/* translateZ */
+			
+			/* scaleZ */
+			transform: translateZ(200px) scaleZ(2);
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<img src="imagen01.jpg" id="imagen" width="700" alt="">
+	</div>
+</body>
+</html>
