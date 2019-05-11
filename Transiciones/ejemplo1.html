@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo 1 - Animaciones</title>
+	<style>
+		body{background: #1D4EA3;}
+		#container{
+			text-align: center;
+		}
+
+		#imagen{
+			width: 400px;
+			transition: width 4s, border-radius 1s;
+		}
+
+		#imagen:hover{
+			border-radius: 50%;
+			width: 600px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<img id="imagen" src="imagen.jpg">	
+	</div>
+	
+</body>
+</html>

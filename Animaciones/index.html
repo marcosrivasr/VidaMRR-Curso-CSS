@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animaciones</title>
+	<style>
+		body{background-color: #0D1C36;}
+		
+		@keyframes rotacion{
+			from{transform: rotateZ(0deg);}
+
+			to{transform: rotateZ(360deg);}
+		}
+
+		@keyframes traslacion{
+			0% {z-index: 1;}
+
+			25% {left: 950px;}
+			50% {left: 1900px;}
+			51% {z-index: -1;}
+			75% {left: 950px;}
+			100% {left: 0; z-index: -1;}
+		}
+
+		@keyframes sombra{
+			0%  {opacity: 1;}
+			25% {opacity: 0;}
+			50% {opacity: 1;}
+			75% {opacity: 0;}
+			100%{opacity: 1;}
+		}
+		/*
+			Nombre
+			Duracion: seg
+			Funcion: linear | ease | ease-in | ease-out | ease-in-out
+			Delay: seg
+			Iteraciones: número | infinite
+			Dirección: alternate | reverse
+		*/
+		#sol{
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			top: 200px;
+			width: 400px;
+			height: 400px;
+			animation-name: rotacion;
+			animation-duration: 30s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+		#tierra{
+			background-color: black;
+			border-radius: 50%;
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0;
+			left: 0;
+			top: 425px;
+			width: 40px;
+			height: 40px;
+			z-index: 1;
+			animation-name: traslacion;
+			animation-duration: 20s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+
+		#img-tierra{
+			animation-name: sombra;
+			animation-duration: 20s;
+			animation-timing-function: linear;
+		}
+	</style>
+</head>
+<body>
+	<div id="sol"><img src="sun.png" alt="" width="400"></div>
+	<div id="tierra">
+		<img src="earth.png" alt="" width="40" id="img-tierra">
+	</div>
+</body>
+</html>
+
+
+
+
